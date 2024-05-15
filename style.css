@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, 
+body {
+    font-family: "Carter One", system-ui;
+}
+
+
+
+.vortex {
+    margin-bottom: 40px;
+    /* border: 10px solid black; */
+    padding: 25px;    
+    display: flex;
+    justify-content: space-between;
+    background: black;; 
+}
+
+.vortex a {
+    color: #fff;
+}
+
+
+
+.logo {
+    
+    display: inline-block;
+}
+
+
+
+.list ul {
+
+display: flex;
+
+
+justify-content: space-between;
+
+
+
+
+}
+
+.list li {
+   
+    /* padding: 10px; */
+    margin: 10px;
+    
+}
+
+.icecube {
+    color: firebrick
+    
+    
+}
+
+
+
+
+
+
+.container {
+    height: 500px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    margin-bottom: 50px;
+}
