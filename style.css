@@ -5,17 +5,39 @@ html {
 html, 
 body {
     font-family: "Carter One", system-ui;
+    /* background-image: url('/IMG_5185.png');
+    background-repeat: no-repeat;
+    background-size: contain; */
 }
 
+body {
+    position: relative;
+    height: 100vh;
+    display: block;
+}
+
+/* body::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000;
+    opacity: .8;
+} */
 
 
 .vortex {
     margin-bottom: 40px;
-    /* border: 10px solid black; */
     padding: 25px;    
     display: flex;
     justify-content: space-between;
     background: black;; 
+    position: relative;
+    z-index: 2;
 }
 
 .vortex a {
@@ -60,11 +82,76 @@ justify-content: space-between;
 
 
 
-
 .container {
-    height: 500px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     max-width: 1024px;
-    margin-bottom: 50px;
+    position: relative;
+    z-index: 3;
+}
+
+main > section {
+    margin-bottom: 4rem;    
+}
+
+h2 {
+    margin-bottom: 1rem;    
+    font-size: 2rem;
+}
+
+
+p {
+   margin-bottom: 1rem; 
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.5;
+}
+
+
+#listofgame {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+#listofgame li {
+    /* border: 1px solid red; */
+}
+
+#listofgame img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #e4e4e4;
+}
+
+#listofgame h3 {
+    font-size: 1.2rem;
+}
+
+
+/* Logo Style */
+.logo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.logo__img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+}
+
+
+.logo__img img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+footer {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 
+
 }
